@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title hello
+  body
+    form(method='POST', action='/paymentStep1/create')
+      | Account Name:
+      br
+      input(type='text', name='account_name', placeholder="account_name")
+      br
+      | 	Account id :
+      br
+      input(type='text', name='account_id', placeholder="account_id")
+      br
+      | 	Amount :
+      br
+      input#number(type='number', name='amount', placeholder="Amount")
+      br
+      | 	Method Of Payment:
+      br
+      select(name='methodofpayment')
+        option(value='Flutterwave') Flutterwave
+      br
+      |     Card Number:
+      br
+      input(type='text', name='card_number', placeholder="card number")
+      br
+      |     PIN:
+      br
+      input(type='text', name='pin', placeholder="pin")
+     
+      
+      input(type='submit', value='Submit')

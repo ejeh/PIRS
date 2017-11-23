@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title hello
+  body
+    form(method='POST', action='/paymentStep1/create')
+      | Tin Number:
+      br
+      input(type='text', name='tin', placeholder="tin")
+      br
+      | 	  Payment_for :
+      br
+      select(name='payment_for')
+        option(value='VAT') valueAdded
+        option(value='capitalGains') capitalGains
+        option(value='education') education
+        option(value='personnalIncome') personnalIncome
+        option(value='company') company
+        
+      br
+      br
+      | 	  Amount:
+      br
+      input#number(type='number', name='amount', placeholder="amount")
+      br
+      input(type='submit', value='Submit')

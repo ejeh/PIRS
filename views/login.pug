@@ -1,0 +1,14 @@
+html
+  head
+    title Text Input Control
+  body
+    form(method='POST', action='/login')
+      h2 login
+      input(type='text', name='username', placeholder='username')
+      br
+      input(type='password', name='password', placeholder='Password')
+      br
+      input(type='submit', value='login')
+      br 
+      p 
+      a(href="/forgot_password") Forgot password?

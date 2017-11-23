@@ -1,0 +1,25 @@
+
+.style{
+    background:url(img5.jpg) no-repeat center fixed; 
+    background-size:cover;            
+}	
+.color{
+    color:#8F9094;
+
+}
+
+legend{
+    color:#8F9094;
+}	
+.col-md-6 {
+    border:1px solid #8F9094;
+    border-radius: 10px;
+}
+h3{
+    color:#8F9094;
+}
+p{
+    color: white
+}
+
+

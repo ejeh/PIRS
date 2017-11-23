@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>UserAuth</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jQuery.js"></script>
+    
+    </head>
+    <body>
+        
+        <form method="POST" action="/register">
+            <h2>Register</h2> 
+            <div class = "alert alert-warning">
+                    <% flashes.forEach(function(data){ %>
+                        <p style="color:red"><b><%= data %></b></p>
+                    <% } )%>
+            </div>
+            <br>
+            <label for="firstName">Firstname</label>
+            <input type= "text" name="firstname">
+            <br> 
+            <label for="lastname">Lastname</label>
+            <input type= "text" name="lastname">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email">          
+            <br>
+            <label for="tin">Tin</label>
+            <input type="number" name="tin">
+            <br>
+            <label for="phone_no">Phone_no</label>
+            <input type= "text" name="username">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+            <br>
+            <label for="password-confirm">confirm Password</label>
+            <input type="password" name="password-confirm">
+            <br>            
+            <input type="submit" value="register"/>
+            <h2>you already have an account please click</h2>
+            <li><a href="/login">Login</a></li>
+        </form>
+    </body>
+    </html>
